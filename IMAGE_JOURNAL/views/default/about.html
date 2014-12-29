@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link href="{{=URL('static', 'css/albumAB.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/album.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/normalize.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/demo.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/component.css')}}" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+
+<body>
+	<div id="container">
+		<header class="codrops-header">
+				<img id ="main-logo"/>
+				<h1>About</h1>	
+				
+		</header>
+	
+		<div class="main">
+			
+			<div id="sb-search" class="sb-search">
+    				<form>
+					<div id="formstyle">
+						<div id="nav">
+							
+							<label id="nav1hover">
+								<input id="nav1" type="button" value="My &#xa; Albums" onclick = 'window.location="{{=URL('default','my_albums',args = [session_id])}}"'/>
+							
+							</label>
+							<label id="nav1hover">
+								<input id="nav2" type="button" value="My &#xa; Timeline" onclick ='window.location="{{=URL('default', 'timeline',args=[session_id])}}"'/>
+							</label>
+							<label id="nav1hover">
+								<input id="nav3" type="button" value="Public &#xa; Albums" onclick = 'window.location="{{=URL('default','public_albums',args = [session_id])}}"'/>
+								
+							</label>
+							<label id="nav1hover">
+								<input id="nav4" type="button" value="Logout" onclick ='window.location="{{=URL('default', 'logout',args=[session_id])}}"'/>
+							</label>
+						</div>
+					</div>
+    				</form>
+			</div>
+
+			<div id="about-block">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"Snap Buzz" -> Snap a pic & hear all the buzz about it!</strong><br>
+<br>
+<strong>
+Snap Buzz is a dynamic Image hosting website. It combines the best features of popular social networking and sharing domains such as Facebook, Instagram and Imgur. 
+Capture your most prized and precious moments and share it online with us!
+</strong>
+<br>
+<br>
+
+<strong>
+How to start off?
+</strong>
+<br>
+-- First, a user registers with us. His/Her details are stored in our databases.<br>
+-- Then, one has to login with his registered email and password.
+<br><br>
+<strong>
+What happens when a user logs in?
+</strong>
+<br>
+-- The user lands on his timeline page which contains the all his most recently posted images.<br>
+-- From each page, the user can navigate to his albums, all the albums on the public database and his timeline.
+<br><br>
+<strong>How does SnapBuzz work?</strong><br>
+-- Firstly, we make an album on the "My Album" Page.<br>
+-- The Album will have a default picture which will be chosen at the time of uploading.<br> 
+-- Also, we have to choose the permissions of the album - if public or private. <br>
+-- On clicking on an album, it takes you to the pictures inside that album.<br>
+-- Here, we can upload more photos.<br>
+-- Also, we can give multiple tags to the album. This can be viewed on the public album page(if the album is set to public preference) under respective tags.   <br>
+-- On clicking on an image inside an album, we can view that image. Comments can also be added by various users.<br>
+-- We can also traverse through the album from here.<br>
+-- Any user can comment on any other user's images.
+<br>
+</p>
+			</div>
+		</div>
+	</div>
+	<div class="foot">
+
+			<div class="footnav">
+				<ul>
+					<li onclick = 'window.location="{{=URL('default','about',args=[session_id])}}"'>About</li>
+					<li onclick = 'window.location="{{=URL('default','contact',args=[session_id])}}"'>Contact</li>
+					<li onclick = 'window.location="{{=URL('default','credits',args=[session_id])}}"'>Credits</a></li>
+				</ul>
+			</div>
+	
+			<div class="social clear">
+				<div class="follow">
+				<ul>
+					<li class="youtube"><a href="https://www.youtube.com" >Youtube</a></li>
+					<li class="facebook"><a href="https://www.facebook.com">Facebook</a></li>
+					<li class="twitter"><a href="https://www.twitter.com" >Twitter</a></li>
+					<li class="google"><a href="https://www.google.com">Google Plus</a></li>
+				</ul>
+				</div>
+			</div>	
+
+
+	</div>
+</body>
+</html>

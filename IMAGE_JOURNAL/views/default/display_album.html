@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image in Album</title>
+	<link href="{{=URL('static', 'css/albumIM.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/normalizeIM.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/demoIM.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/componentIM.css')}}" rel="stylesheet" type="text/css" />
+	<script>
+	function myfunc(name,owner){
+		if(name == owner){
+			x = document.getElementById("upload_form")
+			x.innerHTML = '{{=form.custom.begin}}'+
+			'{{=form.custom.widget.image}}<br>'+
+			'{{=form.custom.submit.update(_id="upload2",_value="Upload")}}'+
+			'{{=form.custom.end}}'+
+			'{{=form2}}'
+			}
+		}
+	</script>
+</head>
+
+<body onload = "myfunc('{{=name}}','{{=owner}}')">
+	<div id="container">
+		<header class="codrops-header">
+				<img id ="main-logo"/>
+				<h1>Albums</h1>	
+				
+		</header>
+	
+		<div class="main">
+			
+			<div id="sb-search" class="sb-search">
+    				<form>
+					<div id="formstyle">
+							
+        					<div id="nav">
+							
+						<label id="nav1hover">
+								<input id="nav1" type="button" value="My &#xa; Albums" onclick = 'window.location="{{=URL('default','my_albums',args = [session_id])}}"'/>
+							
+							</label>
+							<label id="nav1hover">
+								<input id="nav2" type="button" value="My &#xa; Timeline" onclick ='window.location="{{=URL('default','timeline',args=[session_id])}}"'/>
+							</label>
+							<label id="nav1hover">
+								<input id="nav3" type="button" value="Public &#xa; Albums" onclick = 'window.location="{{=URL('default','public_albums',args = [session_id])}}"'/>
+								
+							</label>
+							<label id="nav1hover">
+								<input id="nav4" type="button" value="Logout" onclick ='window.location="{{=URL('default','logout',args=[session_id])}}"'/>
+							</label>
+						</div>
+					</div>
+    				</form>
+			</div>
+
+			<div id = "upload_form">
+			
+			</div>
+
+			<div id="bookshelf" class="bookshelf">
+							{{i=0}}
+							{{for i in range(0,len(images)): }}
+							<figure>
+								<div class = "book" data-book="book-1">
+									<img src = "{{=URL('download',args=images[len(images)-1-i])}}" height = "300px" width = "300px" onclick ='window.location="{{=URL('default', 'display_image', args=[session_id,album_name,images[len(images)-1-i],owner,album_id])}}"'>
+								</div>
+							</figure>
+						{{pass}}
+								
+			</div>
+		</div>
+	</div>
+	<div class="foot">
+			<div class="footnav">
+				<ul>
+					<li onclick = 'window.location="{{=URL('default','about',args=[session_id])}}"'>About</li>
+					<li onclick = 'window.location="{{=URL('default','contact',args=[session_id])}}"'>Contact</li>
+					<li onclick = 'window.location="{{=URL('default','credits',args=[session_id])}}"'>Credits</li>
+				</ul>
+			</div>
+	
+			<div class="social clear">
+				<div class="follow">
+				<ul>
+					<li class="youtube"><a href="https://www.youtube.com" >Youtube</a></li>
+					<li class="facebook"><a href="https://www.facebook.com">Facebook</a></li>
+					<li class="twitter"><a href="https://www.twitter.com" >Twitter</a></li>
+					<li class="google"><a href="https://www.google.com">Google Plus</a></li>
+				</ul>
+				</div>
+			</div>	
+
+
+	</div>
+</body>
+</html>

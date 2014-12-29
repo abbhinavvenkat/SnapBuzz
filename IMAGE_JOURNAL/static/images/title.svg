@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="title.svg">
+  <defs
+     id="defs4">
+    <filter
+       id="filter3786"
+       inkscape:label="filter1">
+      <feMorphology
+         id="feMorphology3802"
+         radius="5.6000000000000005 0.80000000000000004"
+         operator="dilate" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.58"
+     inkscape:cx="71.551724"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:183.14395142000000760px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#20b2aa;fill-opacity:1;stroke:none;font-family:NanumGothic;-inkscape-font-specification:Sans Bold;opacity:1;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3786)"
+       x="13.024123"
+       y="416.4129"
+       id="text2985"
+       sodipodi:linespacing="125%"
+       transform="scale(0.78756919,1.2697297)"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="13.024123"
+         y="416.4129"
+         style="letter-spacing:-8.08000363000000021px;font-style:normal;-inkscape-font-specification:NanumGothic Semi-Bold;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none">SNAP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:NanumGothic;-inkscape-font-specification:Sans Bold"
+       x="341.3793"
+       y="495.46564"
+       id="text2989"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2991"
+         x="341.3793"
+         y="495.46564" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:183.14395142px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#dc143c;fill-opacity:1;stroke:none;font-family:NanumGothic;-inkscape-font-specification:Sans Bold"
+       x="468.38229"
+       y="416.53815"
+       id="text2985-1"
+       sodipodi:linespacing="125%"
+       transform="scale(0.78756919,1.2697297)"><tspan
+         sodipodi:role="line"
+         id="tspan2987-8"
+         x="468.38229"
+         y="416.53815"
+         style="font-weight:normal;letter-spacing:-7.39999819px;-inkscape-font-specification:NanumGothic">BUZZ</tspan></text>
+  </g>
+</svg>

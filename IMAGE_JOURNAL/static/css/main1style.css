@@ -1,0 +1,205 @@
+		.mosaic {
+			width:51.3em;
+			position:absolute;
+		}
+		
+		#slideshow img {
+		    width:12em;
+			height:8em;
+		}
+		
+		#slideshow { 
+		    position: relative; 
+		    width: 12em; 
+		    height: 8em;  
+		    /*box-shadow: 0 0 20px rgba(0,0,0,0.4); */
+		}
+		
+		#slideshow > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+		#slideshow1 img {
+			width:18em;
+			height:13em;
+		}
+		#slideshow1 {
+		   position: relative; 
+		    width: 18em; 
+		    height: 13em;
+		    margin-left:12em;
+		    margin-top:-8em;
+		}
+		
+		#slideshow1 > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+		
+		#slideshow2 img {
+			width:10em;
+			height:6.5em;
+		}
+		#slideshow2 {
+		   position: relative; 
+		    width: 10em; 
+		    height: 6.5em;
+		    margin-left:30em;
+		    margin-top:-13em;
+		}
+		
+		#slideshow2 > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+	
+		#slideshow3 img {
+			width:20em;
+			height:11.5em;
+		}
+		#slideshow3 {
+		   position: relative; 
+		    width: 20em; 
+		    height: 11.5em;
+		    margin-left:30em;
+		    margin-top:0em;
+		}
+		
+		#slideshow3 > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+		
+		#slideshow4 img {
+			width:12em;
+			height:15em;
+		}
+		#slideshow4 {
+		   position: relative; 
+		    width: 12em; 
+		    height: 15em;
+		    margin-left:0em;
+		    margin-top:-10em;
+		}
+		
+		#slideshow4 > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+		#slideshow5 img {
+			width:9em;
+			height:10em;
+		}
+		#slideshow5 {
+		   position: relative; 
+		    width: 9em; 
+		    height: 10em;
+		    margin-left:12em;
+		    margin-top:-10em;
+		}
+		
+		#slideshow5 > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+		
+		#slideshow6 img {
+			width:9em;
+			height:5em;
+		}
+		#slideshow6 {
+		   position: relative; 
+		    width: 9em; 
+		    height: 5em;
+		    margin-left:21em;
+		    margin-top:-10em;
+		}
+		
+		#slideshow6 > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+		#slideshow7 img {
+			width:10em;
+			height:6.5em;
+		}
+		#slideshow7 {
+		   position: relative; 
+		    width: 10em; 
+		    height: 6.5em;
+		    margin-left:40em;
+		    margin-top:-18em;
+		}
+		
+		#slideshow7 > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+		
+		#slideshow8 img {
+			width:14.5em;
+			height:5em;
+		}
+		#slideshow8 {
+		   position: relative; 
+		    width: 14.5em; 
+		    height: 5em;
+		    margin-left:21em;
+		    margin-top:11.5em;
+		}
+		
+		#slideshow8 > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+		
+		#slideshow9 img {
+			width:14.5em;
+			height:5em;
+		}
+		#slideshow9 {
+		   position: relative; 
+		    width: 14.5em; 
+		    height: 5em;
+		    margin-left:35.5em;
+		    margin-top:-5em;
+		}
+		
+		#slideshow9 > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+		

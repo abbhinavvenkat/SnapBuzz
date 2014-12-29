@@ -1,0 +1,10 @@
+{{extend 'layout.html'}}
+
+{{for i in range(0,len(comments)):}}
+<div>
+<p>{{=commentators[i]}}</p>
+<p>{{=comments[i]}}</p>
+<button id = "accept" onclick = 'window.location="{{=URL('default', 'validate_comment', args=[session_id,ids[i]])}}"'>Accept</button>
+</div>
+{{pass}}
+

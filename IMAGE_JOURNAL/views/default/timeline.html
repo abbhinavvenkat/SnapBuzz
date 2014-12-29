@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Timeline</title>
+	
+
+	<link href="{{=URL('static', 'css/album.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/normalize.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/demo.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/componentTM.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/image.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/timeline.css')}}" rel="stylesheet" type="text/css" />
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>-->
+</head>
+
+<body>
+	<div id="container">
+		<header class="codrops-header">
+				<img id ="main-logo">
+				<h1>My Timeline</h1>	
+		</header>
+		
+		<div class="main">
+			<div id="sb-search" class="sb-search">
+    				<form>
+					<div id="formstyle">	
+						<div id="nav">
+							<input id="navOWNER" type="button" value="Welcome &#xa; {{=name}} !"/>
+							<label id="nav1hover">
+								<input id="nav1" type="button" value="My &#xa; Albums" onclick = 'window.location="{{=URL('default','my_albums',args=[session_id])}}"'/>
+							
+							</label>
+							<label id="nav1hover">
+								<input id="nav2" type="button" value="My &#xa; Timeline" onclick ='window.location="{{=URL('default','timeline',args=[session_id])}}"'/>
+							</label>
+							<label id="nav1hover">
+								<input id="nav3" type="button" value="Public &#xa; Albums" onclick = 'window.location="{{=URL('default','public_albums',args=[session_id])}}"'/>
+								
+							</label>
+							<label id="nav1hover">
+								<input id="nav4" type="button" value="Logout" onclick ='window.location="{{=URL('default','logout',args=[session_id])}}"'/>
+							</label>
+						</div>
+					</div>
+    				</form>
+			</div>
+			{{k=0}}
+			<div id="block1">
+
+			
+				
+				{{for j in ids:}}
+				{{i=rows[k]}}
+				<div id="timeline-background">
+					<div id="timeline-foreground" onclick = 'window.location="{{=URL('default', 'display_image', args=[session_id,i.album,i.image,i.owner,j])}}"'>
+				
+						<img id="img-timeline" src = "{{=URL('download',args=[i.image])}}" height = "450" width = "560">
+						<div id="img-details">
+							<figcaption><h2>
+							<strong>{{=fundates[k]}} </strong>
+							<br>
+							--<strong>{{=i.album}} </strong>--
+							<br>
+							(<strong>{{=i.owner}} </strong>)
+							</h2>
+							{{k += 1}}
+							</figcaption>
+						</div>
+					</div>
+				</div>
+
+				
+				{{pass}}
+				
+			
+			</div>
+		</div>
+	</div>
+	<div class="foot-image foot">
+			<div class="footnav">
+				<ul>
+					<li onclick = 'window.location="{{=URL('default','about',args=[session_id])}}"'>About</li>
+					<li onclick = 'window.location="{{=URL('default','contact',args=[session_id])}}"'>Contact</li>
+					<li onclick = 'window.location="{{=URL('default','credits',args=[session_id])}}"'>Credits</a></li>
+				</ul>
+			</div>
+	
+			<div class="social clear">
+				<div class="follow">
+				<ul>
+					<li class="youtube"><a href="https://www.youtube.com" >Youtube</a></li>
+					<li class="facebook"><a href="https://www.facebook.com">Facebook</a></li>
+					<li class="twitter"><a href="https://www.twitter.com" >Twitter</a></li>
+					<li class="google"><a href="https://www.google.com">Google Plus</a></li>
+				</ul>
+				</div>
+			</div>	
+
+	</div>
+</body>
+</html>

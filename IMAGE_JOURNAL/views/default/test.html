@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="{{=URL('static','js/jquery.js')}}"></script>
+<script src="{{=URL('static','js/web2py.js')}}"></script>
+</head>
+<body>
+<div>
+
+<form>
+<input id="searchinput" type="text" name="searchinput"/>
+<div id="suggestions"></div>
+</form>
+</div>
+<script>
+jQuery("#searchinput").keyup(function(){
+	ajax('{{=URL('default','search_byalbum')}}', ['searchinput'], 'suggestions')});
+</script>
+</body>
+
+	
+</html>

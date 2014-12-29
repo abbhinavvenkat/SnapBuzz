@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In</title>
+	<link href="{{=URL('static', 'css/mainstyle.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/main1style.css')}}" rel="stylesheet" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<title>
+</title>
+</head>
+
+<body>
+	<h2>{{=response.title}}</h2>
+	<div id="container">
+		<div class="header">
+			<h1>Picture/LOGO/etc. goes here.</h1>
+		</div>
+	
+		<div class="content">
+			
+			<div class="mosaic" align="left">
+				<div id="slideshow">
+   					<div>
+     						<img src="../static/images/imgslide1.jpg">
+   					</div>
+   					<div>
+     						<img src="../static/images/img3slide1.jpg">
+   					</div>
+   				</div>
+				<div id="slideshow1">
+   					<div>
+     						<img src="../static/images/img2slide1.jpg">
+   					</div>
+   					<div>
+     						<img src="../static/images/img10slide1.jpg">
+   					</div>
+   				</div>
+				<div id="slideshow2">
+   					<div>
+     						<img src="../static/images/img1slide1.jpg">
+   					</div>
+   					<div>
+     						<img src="../static/images/img6slide1.jpg">
+   					</div>
+   				</div>
+				<div id="slideshow3">
+   					<div>
+     						<img src="../static/images/img3slide1.jpg">
+   					</div>
+   					<div>
+     						<img src="../static/images/img7slide1.jpg">
+   					</div>
+   				</div>
+				<div id="slideshow4">
+   					<div>
+     						<img src="../static/images/img7slide1.jpg">
+   					</div>
+   					<div>
+     						<img src="../static/images/img6slide1.jpg">
+   					</div>
+   				</div>
+				<div id="slideshow5">
+   					<div>
+     						<img src="../static/images/img2slide1.jpg">
+   					</div>
+   					<div>
+     						<img src="../static/images/img1slide1.jpg">
+   					</div>
+   				</div>
+				<div id="slideshow6">
+   					<div>
+     						<img src="../static/images/img3slide1.jpg">
+   					</div>
+   					<div>
+     						<img src="../static/images/imgslide1.jpg">
+   					</div>
+   				</div>
+				<div id="slideshow7">
+   					<div>
+     						<img src="../static/images/imgslide1.jpg">
+   					</div>
+   					<div>
+     						<img src="../static/images/img5slide1.jpg">
+   					</div>
+   				</div>
+				<div id="slideshow8">
+   					<div>
+     						<img src="../static/images/img7slide1.jpg">
+   					</div>
+   					<div>
+     						<img src="../static/images/imgslide1.jpg">
+   					</div>
+   				</div>
+				<div id="slideshow9">
+   					<div>
+     						<img src="../static/images/img6slide1.jpg">
+   					</div>
+   					<div>
+     						<img src="../static/images/img3slide1.jpg">
+   					</div>
+   				</div>
+			</div>
+
+
+	
+		
+	 		<div id="formstyle">
+				<div id="form">	
+					{{=form.custom.begin}}			
+					<label>
+					<span class="fields">Email<font color=#FF0000></font></span>{{=form.custom.widget.Email}}
+					</label>
+
+					<label>
+					<span class="fields">Password<font color=#FF0000></font></span>{{=form.custom.widget.Password}}
+					</label>
+							
+					<label id="buttonhover">
+					{{=form.custom.submit}}<br>
+					{{=form.custom.end}}
+					
+					</label>
+							
+					<label id="signhover">
+					<input id="signstyle" type="button" value="Register" onclick ='window.location="{{=URL('default', 'register', args=[])}}"'/>
+					</label>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+	<div class="foot">
+
+			<div class="footnav">
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Credits</a></li>
+				</ul>
+			</div>
+	
+			<div class="social clear">
+				<div class="follow">
+				<ul>
+					<li class="youtube"><a href="#" >Youtube</a></li>
+					<li class="facebook"><a href="#">Facebook</a></li>
+					<li class="twitter"><a href="#" >Twitter</a></li>
+					<li class="google"><a href="#">Google Plus</a></li>
+				</ul>
+				</div>
+			</div>	
+
+	</div>
+
+	<script type="text/javascript">
+
+		$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut()
+			    .next()
+			    .fadeIn()
+			    .end()
+			    .appendTo('#slideshow');
+			},  2400);
+			
+		});
+
+		$(function() {
+		
+			$("#slideshow1 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow1 > div:first')
+			    .fadeOut()
+			    .next()
+			    .fadeIn()
+			    .end()
+			    .appendTo('#slideshow1');
+			},  3400);
+			
+		});
+		$(function() {
+		
+			$("#slideshow2 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow2 > div:first')
+			    .fadeOut()
+			    .next()
+			    .fadeIn()
+			    .end()
+			    .appendTo('#slideshow2');
+			},  1400);
+			
+		});
+		$(function() {
+		
+			$("#slideshow3 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow3 > div:first')
+			    .fadeOut()
+			    .next()
+			    .fadeIn()
+			    .end()
+			    .appendTo('#slideshow3');
+			},  1800);
+			
+		});
+		$(function() {
+		
+			$("#slideshow4 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow4 > div:first')
+			    .fadeOut()
+			    .next()
+			    .fadeIn()
+			    .end()
+			    .appendTo('#slideshow4');
+			},  2800);
+			
+		});
+		$(function() {
+		
+			$("#slideshow5 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow5 > div:first')
+			    .fadeOut()
+			    .next()
+			    .fadeIn()
+			    .end()
+			    .appendTo('#slideshow5');
+			},  3800);
+			
+		});
+		$(function() {
+		
+			$("#slideshow6 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow6 > div:first')
+			    .fadeOut()
+			    .next()
+			    .fadeIn()
+			    .end()
+			    .appendTo('#slideshow6');
+			},  4800);
+			
+		});
+		$(function() {
+		
+			$("#slideshow7 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow7 > div:first')
+			    .fadeOut()
+			    .next()
+			    .fadeIn()
+			    .end()
+			    .appendTo('#slideshow7');
+			},  4400);
+			
+		});
+		$(function() {
+		
+			$("#slideshow8 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow8 > div:first')
+			    .fadeOut()
+			    .next()
+			    .fadeIn()
+			    .end()
+			    .appendTo('#slideshow8');
+			},  3400);
+			
+		});
+		$(function() {
+		
+			$("#slideshow9 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow9 > div:first')
+			    .fadeOut()
+			    .next()
+			    .fadeIn()
+			    .end()
+			    .appendTo('#slideshow9');
+			},  5400);
+			
+		});
+		
+	</script>
+</body>
+</html>
+

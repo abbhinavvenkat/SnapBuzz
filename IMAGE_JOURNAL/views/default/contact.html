@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link href="{{=URL('static', 'css/album.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/normalize.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/demo.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{=URL('static', 'css/component.css')}}" rel="stylesheet" type="text/css" />
+
+	<link href="../../static/css/contact.css" rel="stylesheet" type="text/css"/>
+	<link href="../../static/css/album.css" rel="stylesheet" type="text/css"/>
+	<link href="../../static/css/normalize.css" rel="stylesheet" type="text/css"/>
+	<link href="../../static/css/demo.css" rel="stylesheet" type="text/css"/>
+	<link href="../../static/css/component.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+	<div id="container">
+		<header class="codrops-header">
+				<img id ="main-logo"/>
+				<h1>Contact Us</h1>	
+				
+		</header>
+	
+		<div class="main">
+			
+			<div id="sb-search" class="sb-search">
+    				<form>
+					<div id="formstyle">
+						<div id="nav">
+							
+							<label id="nav1hover">
+								<input id="nav1" type="button" value="My &#xa; Albums" onclick = 'window.location="{{=URL('default','my_albums',args = [session_id])}}"'/>
+							
+							</label>
+							<label id="nav1hover">
+								<input id="nav2" type="button" value="My &#xa; Timeline" onclick ='window.location="{{=URL('default', 'timeline',args=[session_id])}}"'/>
+							</label>
+							<label id="nav1hover">
+								<input id="nav3" type="button" value="Public &#xa; Albums" onclick = 'window.location="{{=URL('default','public_albums',args = [session_id])}}"'/>
+								
+							</label>
+							<label id="nav1hover">
+								<input id="nav4" type="button" value="Logout" onclick ='window.location="{{=URL('default', 'logout',args=[session_id])}}"'/>
+							</label>
+						</div>
+					</div>
+    				</form>
+			</div>
+
+			<div id="about-block">
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abbhinav Venkat -- abbhinav.venkat@students.iiit.ac.in<br><br><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kartik Gupta -- kartik.gupta@students.iiit.ac.in<br><br><br>
+					Vishal Thamizharasan -- vishal.thamizharasan@students.iiit.ac.in
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="foot">
+
+			<div class="footnav">
+				<ul>
+					<li onclick = 'window.location="{{=URL('default','about',args=[session_id])}}"'>About</li>
+					<li onclick = 'window.location="{{=URL('default','contact',args=[session_id])}}"'>Contact</li>
+					<li onclick = 'window.location="{{=URL('default','credits',args=[session_id])}}"'>Credits</a></li>
+				</ul>
+			</div>
+	
+			<div class="social clear">
+				<div class="follow">
+				<ul>
+					<li class="youtube"><a href="https://www.youtube.com" >Youtube</a></li>
+					<li class="facebook"><a href="https://www.facebook.com">Facebook</a></li>
+					<li class="twitter"><a href="https://www.twitter.com" >Twitter</a></li>
+					<li class="google"><a href="https://www.google.com">Google Plus</a></li>
+				</ul>
+				</div>
+			</div>	
+
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.main {
+			background:url("../../static/images/collage.jpg") repeat-y ;  
+			height:60em;
+			-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+	        -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+	        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+        }
+
+		#about-block{
+			position:absolute;
+			width:50em;
+			margin-left:12.5em;
+			height:50em;
+			background:#000;
+			opacity:0.9;
+			-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+	        -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+	        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+		}
+
+		#about-block p{
+			padding-left:4em;
+			padding-right:4em;
+			padding-top:3.8em;
+		}

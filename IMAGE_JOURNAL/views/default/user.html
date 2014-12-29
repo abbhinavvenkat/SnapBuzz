@@ -1,0 +1,12 @@
+{{extend 'layout.html'}}
+<button id = "add_album" onclick = 'window.location="{{=URL('default', 'add_album', args=[session_id])}}"'>Add Album</button>
+<button id = "my_albums" onclick = 'window.location="{{=URL('default','my_albums',args = [session_id])}}"'>My Albums</button>
+<button id = "public_albums" onclick = 'window.location="{{=URL('default','public_albums',args = [session_id])}}"'>All Albums</button>
+<button id = "logout" onclick = 'window.location="{{=URL('default','logout',args = [session_id])}}"'>Logout</button>
+<button id = "request" onclick = 'window.location="{{=URL('default','requests',args = [session_id])}}"'>Requests</button>
+<script>
+function myfunc(){
+	alert("hello");
+}
+</script>
+
